@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Forcer IE à utiliser sa dernière version du moteur de rendu -->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+		<!-- Affichage sans zoom sur les mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+		<!-- Ma feuille de style -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- Font-awesome -->        
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="x-icon" href="img/favicon.ico"> -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>		
+		<title>Du pazaak</title>	
+
+	</head>
+
+	<body>
+
+		<main>
+
+			<!-- Ce header sert à afficher les infos des joueurs (score, noms, etc) -->
+			<!-- Début : En-tête du jeu -->
+			<header>
+
+				<!-- Début : Joueur 1 -->
+				<section>
+					<span>V</span>ous
+					<div>0</div>
+				</section><!-- Fin : Joueur 1 -->
+
+				<!-- Début : Joueur 2 -->
+				<section>
+					<span>V</span>otre <span>a</span>dversaire
+					<div>0</div>
+				</section><!-- Fin : Joueur 2 -->
+
+			</header><!-- Fin : En-tête du jeu -->
+
+			<!-- Dans ce div, on affichera (en JS) le joueur dont c'est le tour -->
+			<div></div>
+				
+			<!-- Cette première section sert à afficher les cartes jouées -->
+			<!-- Début : Plateaux -->
+			<section id="boards">
+
+				<!-- On va la séparer en deux sous sections : le plateau du joueur 1 et celui du joueur 2 -->
+
+				<!-- Début : Joueur 1 -->
+				<section>
+					
+				</section><!-- Fin : Joueur 1 -->
+
+				<!-- Début : Joueur 2 -->
+				<section>
+					
+				</section><!-- Fin : Joueur 2 -->
+				
+			</section><!-- Fin : Plateaux -->
+
+			<!-- Cette seconde section sert à afficher la main des joueurs -->
+			<!-- Début : Mains -->
+			<section id="hands" class="active">
+				
+				<!-- Ici aussi, on la sépare en deux sous sections : la main du joueur 1 et celle du joueur 2 -->
+
+				<!-- Début : Joueur 1 -->
+				<section>
+					<h2 class="playerTurn"><span>V</span>otre <span>m</span>ain</h2>
+					
+				</section><!-- Fin : Joueur 1 -->
+
+				<!-- Début : Joueur 2 -->
+				<section>
+					<h2 class="computerTurn"><span>M</span>ain <span>d</span>e <span>v</span>otre <span>a</span>dversaire</h2>
+
+				</section><!-- Fin : Joueur 2 -->
+
+				<section id="actions">
+						<a href="#" id="turnEnd"><span>F</span>in <span>d</span>u <span>t</span>our</a>
+						<a href="#" id="servi"><span>S</span>ervi</a>
+				</section>
+
+			</section><!-- Fin : Mains -->
+
+		</main>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Javascript Pazaak -->	
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>
